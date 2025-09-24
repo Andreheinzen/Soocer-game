@@ -117,5 +117,55 @@ body {
     right: 0;
 }
 
+/* Placar */
+.score-board {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5em;
+    color: #ffcc00; /* Dourado */
+    text-shadow: 0 0 5px #000;
+    z-index: 10;
+}
+
+/* Jogadores */
+.player {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.player-1 {
+    background-color: #0088ff; /* Time azul */
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-2 {
+    background-color: #ff0000; /* Time vermelho */
+    right: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Bola */
+.ball {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Importando a fonte estilo fliperama */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
