@@ -62,5 +62,60 @@ body {
     to { opacity: 0.8; }
 }
 
+/* Estilo do campo de jogo */
+.game-screen {
+    background-color: #1a6d1a;
+    position: relative;
+}
+
+.center-line {
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center-circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.goal {
+    position: absolute;
+    width: 20px;
+    height: 100px;
+    background-color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.left-goal {
+    left: 0;
+}
+
+.right-goal {
+    right: 0;
+}
+
 /* Importando a fonte estilo fliperama */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
