@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Press Start 2P', cursive; /* Usaremos uma fonte de fliperama! */
+    color: #fff;
+    text-align: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    background-color: #222;
+    border: 5px solid #00ff00; /* Borda neon verde */
+    box-shadow: 0 0 20px #00ff00;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: radial-gradient(circle, #444, #111);
+}
+
+.title {
+    font-size: 3em;
+    color: #ff00ff; /* Cor magenta neon */
+    text-shadow: 
+        0 0 10px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff;
+    animation: flicker 1s infinite alternate;
+}
+
+.menu-button {
+    background-color: #00ff00;
+    color: #000;
+    border: 3px solid #000;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+/* Animação para o efeito de piscar do título */
+@keyframes flicker {
+    from { opacity: 1; }
+    to { opacity: 0.8; }
+}
+
+/* Importando a fonte estilo fliperama */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
